@@ -104,6 +104,48 @@ function aletheme_get_options() {
                         "std" => "",
                         "type" => "text");
 
+    $options[] = array("name" => "Header Options",
+                        "type" => "heading");
+
+    //поля для ввода телефонов
+    $options[] = array( "name" => "Call Number 1",
+        "desc" => "Insert the call number",
+        "id" => "ale_callnumber1",
+        "std" => "",
+        "type" => "text");
+
+    $options[] = array( "name" => "Call Number 2",
+        "desc" => "Insert the call number",
+        "id" => "ale_callnumber2",
+        "std" => "",
+        "type" => "text");
+
+    $options[] = array( "name" => "Call Number 3",
+        "desc" => "Insert the call number",
+        "id" => "ale_callnumber3",
+        "std" => "",
+        "type" => "text");
+
+//    телефоны такси по городам
+
+    $options[] = array( "name" => "Location 1",
+        "desc" => "Insert the location",
+        "id" => "ale_location1",
+        "std" => "",
+        "type" => "text");
+
+    $options[] = array( "name" => "Location 2",
+        "desc" => "Insert the location",
+        "id" => "ale_location2",
+        "std" => "",
+        "type" => "text");
+
+    $options[] = array( "name" => "Location 3",
+        "desc" => "Insert the location",
+        "id" => "ale_location3",
+        "std" => "",
+        "type" => "text");
+
     $options[] = array( "name" => "Typography",
                         "type" => "heading");
 

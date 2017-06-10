@@ -20,15 +20,18 @@
 
 <div id="call-us" class="call-us">
     <div class="selected">
-        <span>Berlin</span>
+        <span><?php echo ale_get_option('location3')?></span>
 
         <ul>
-            <li data-num="#790">Berlin</li>
-            <li data-num="#780">London</li>
-            <li data-num="#740">Chisinau</li>
+            <?php if(ale_get_option('callnumber1')) { ?><li data-num="<?php echo ale_get_option('callnumber1');?>"><?php echo ale_get_option('location1'); ?></li> <?php }?>
+
+            <?php if(ale_get_option('callnumber2')) { ?><li data-num="<?php echo ale_get_option('callnumber2');?>"><?php echo ale_get_option('location2'); ?></li> <?php }?>
+
+            <?php if(ale_get_option('callnumber3')) { ?><li data-num="<?php echo ale_get_option('callnumber3');?>"><?php echo ale_get_option('location3'); ?></li> <?php }?>
+
         </ul>
     </div>
-    <div class="number">#790</div>
+    <div class="number"><?php echo ale_get_option('callnumber3');?></div>
     <p><?php echo ale_get_option('calltoaction'); ?></p>
 </div>
 
