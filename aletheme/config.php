@@ -37,6 +37,12 @@ function aletheme_get_options() {
                         "std" => "Call us any time",
                         "type" => "text");
 
+    $options[] = array( "name" => "Site Header Logo",
+                        "desc" => "Upload or put the site logo link (Default logo size: 133-52px)",
+                        "id" => "ale_sitelogo",
+                        "std" => "",
+                        "type" => "upload");
+
     $options[] = array( "name" => "Home Page Slider slug",
                         "desc" => "Insert the slider slug. Get the slug on Sliders Section",
                         "id" => "ale_homeslugfull",

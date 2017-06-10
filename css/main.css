@@ -3395,3 +3395,15 @@ body.blog-inside .leave-a-comment input[type='submit'] {
 .about .certificate .col-5 img {
   box-shadow: 0 10px 30px 10px rgba(0, 0, 0, 0.3);
 }
+
+/*логотип*/
+.customlogo {
+  display: block;
+  position: absolute;
+  left: 50%;
+}
+
+.customlogo img {
+  max-width: 235px;
+  height: auto;
+}

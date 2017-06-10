@@ -37,8 +37,13 @@
 
 <!-- Nav -->
 <nav class="main">
-    <a class="logo" href="index.html"></a>
 
+
+    <?php  if(ale_get_option('sitelogo')) { ?>
+        <a href="<?php echo home_url(); ?>" class="customlogo"><img src="<?php echo ale_get_option('sitelogo');?>" /></a>
+    <?php } else { ?>
+        <a class="logo" href="<?php echo home_url(); ?>"></a>
+    <?php } ?>
     <div class="col-6 left">
         <ul class="first cf">
 
