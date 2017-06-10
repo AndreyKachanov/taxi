@@ -31,11 +31,17 @@ function aletheme_get_options() {
 	$options[] = array("name" => "Theme",
 						"type" => "heading");
 
-    $options[] = array( "name" => "Site Logo",
-                        "desc" => "Upload or put the site logo link (Default logo size: 133-52px)",
-                        "id" => "ale_sitelogo",
+    $options[] = array( "name" => "Call to action Title",
+                        "desc" => "Insert the call to action text",
+                        "id" => "ale_calltoaction",
+                        "std" => "Call us any time",
+                        "type" => "text");
+
+    $options[] = array( "name" => "Home Page Slider slug",
+                        "desc" => "Insert the slider slug. Get the slug on Sliders Section",
+                        "id" => "ale_homeslugfull",
                         "std" => "",
-                        "type" => "upload");
+                        "type" => "text");
 
     $options[] = array( "name" => "Site Footer Logo",
                         "desc" => "Upload or put the site logo link (Default logo size: 133-52px)",
