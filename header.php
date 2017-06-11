@@ -44,53 +44,33 @@
     <?php } else { ?>
         <a class="logo" href="<?php echo home_url(); ?>"></a>
     <?php } ?>
+
+<!--    Верхнее меню-->
     <div class="col-6 left">
-        <ul class="first cf">
-
-            <li><a href="booking.html">Booking</a></li>
-            <li class="dot">•</li>
-            <li>
-                <a href="services.html">Services</a>
-                <ul class="second">
-                    <li><a href="services.html">Reto cab</a></li>
-                    <li><a href="services.html">VIP taxi</a></li>
-                    <li>
-                        <a href="services.html">Regular</a>
-
-                        <ul class="third">
-                            <li><a href="services.html">Reto Cab</a></li>
-                            <li><a href="services.html">VIP axi</a></li>
-                            <li><a href="services.html">Regular</a></li>
-                            <li><a href="services.html">Airport meeting</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="services.html">Airport meeting</a></li>
-                </ul>
-            </li>
-            <li class="dot">•</li>
-            <li class="active"><a href="index.html">Home</a></li>
-        </ul>
+        <?php  if(has_nav_menu('header_left_menu')) {
+            wp_nav_menu(array(
+                    'theme_location' => 'header_left_menu',
+                    'menu' => 'Header Left Menu',
+                    'menu_class' => 'first menu menu-left cf',
+                    'walker' => new Aletheme_Nav_Walker(),
+                    'container' => '',
+            ));
+        } ?>
     </div>
     <div class="col-6 right">
-        <ul class="first cf">
-            <li class="dot show-tablet">•</li>
-            <li>
-                <a href="blog.html">Blog</a>
-                <ul class="second">
-                    <li><a href="blog.html">News</a></li>
-                    <li><a href="blog.html">Sport</a></li>
-                    <li><a href="blog-inside.html">Single</a></li>
-                </ul>
-            </li>
-            <li class="dot">•</li>
-            <li><a href="about.html">About</a></li>
-            <li class="dot">•</li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
+        <?php  if(has_nav_menu('header_right_menu')) {
+            wp_nav_menu(array(
+                'theme_location' => 'header_right_menu',
+                'menu' => 'Header Right Menu',
+                'menu_class' => 'first menu menu-right cf',
+                'walker' => new Aletheme_Nav_Walker(),
+                'container' => '',
+            ));
+        } ?>
     </div>
+    <!--Конец верхнего меню -->
 
-    <!-- -->
-    <a href="#" class="mobile-button">Menu</a>
+    <!-- <a href="#" class="mobile-button">Menu</a>
     <ul class="mobile-menu">
         <li><a href="index.html">Home</a></li>
         <li>
@@ -122,6 +102,7 @@
         <li><a href="about.html">About</a></li>
         <li><a href="contact.html">Contact</a></li>
     </ul>
+    -->
 
     <!-- Search -->
     <div class="search-button"></div>
@@ -129,6 +110,7 @@
         <input type="text" placeholder="Search"/>
         <input type="submit" value=" "/>
     </form>
+    <?php get_search_form();?>
 
 </nav>
 

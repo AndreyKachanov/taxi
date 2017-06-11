@@ -1,3 +1,17 @@
+/*Пока что вставил стили сюда. Разобраться почему не работает less*/
+.customlogo {
+  display: block;
+  position: absolute;
+  left: 50%;
+  margin-left: -70px;
+  bottom: -24px;
+}
+
+.customlogo img {
+  max-width: 140px;
+  height: auto;
+}
+
 /*
 Table of Contents
 =================
@@ -782,7 +796,7 @@ nav.main ul.first > li.dot {
   color: #f2ac20;
   font-size: 14px;
 }
-nav.main ul.first > li.active:after {
+nav.main ul.first > li.active:after, nav.main ul.first > li.current-menu-item:after {
   position: absolute;
   content: '';
   display: block;
@@ -795,17 +809,17 @@ nav.main ul.first > li.active:after {
   z-index: 1;
 }
 nav.main ul.first > li:hover > a,
-nav.main ul.first > li.active > a {
+nav.main ul.first > li.active > a, nav.main ul.first > li.current-menu-item > a {
   color: #c85a45;
 }
 nav.main ul.first > li a {
   display: block;
   color: #222222;
 }
-nav.main ul.first > li:hover > ul.second {
+nav.main ul.first > li:hover > ul.second, nav.main ul.first > li:hover > ul.sub-menu {
   display: block;
 }
-nav.main ul.first ul.second {
+nav.main ul.first ul.second, nav.main ul.first ul.sub-menu {
   position: absolute;
   border-top: 15px solid #c85a45;
   border-bottom-right-radius: 5px;
@@ -819,7 +833,7 @@ nav.main ul.first ul.second {
   z-index: 2;
   /* 3rd level */
 }
-nav.main ul.first ul.second:before {
+nav.main ul.first ul.second:before, nav.main ul.first ul.sub-menu:before {
   position: absolute;
   content: '';
   display: block;
@@ -829,7 +843,7 @@ nav.main ul.first ul.second:before {
   height: 15px;
   background: url("images/menu-drop-shadow.png") repeat-x;
 }
-nav.main ul.first ul.second > li {
+nav.main ul.first ul.second > li, nav.main ul.first ul.sub-menu > li {
   float: none;
   line-height: 40px;
   text-transform: none;
@@ -842,21 +856,21 @@ nav.main ul.first ul.second > li {
   transition: background 0.3s ease;
   /* Show 2nd level */
 }
-nav.main ul.first ul.second > li:last-child {
+nav.main ul.first ul.second > li:last-child, nav.main ul.first ul.sub-menu > li:last-child  {
   border-bottom: none;
 }
-nav.main ul.first ul.second > li:hover {
+nav.main ul.first ul.second > li:hover, nav.main ul.first ul.sub-menu > li:hover {
   background: #404242;
 }
-nav.main ul.first ul.second > li a {
+nav.main ul.first ul.second > li a, nav.main ul.first ul.sub-menu > li a {
   display: block;
   padding: 0 30px;
   color: #fff;
 }
-nav.main ul.first ul.second > li:hover > ul.third {
+nav.main ul.first ul.second > li:hover > ul.third, nav.main ul.first ul.sub-menu > li:hover > ul.third {
   display: block;
 }
-nav.main ul.first ul.second ul.third {
+nav.main ul.first ul.second ul.third, nav.main ul.first ul.sub-menu ul.third {
   position: absolute;
   top: -1px;
   left: 100%;
@@ -868,7 +882,7 @@ nav.main ul.first ul.second ul.third {
   padding-bottom: 10px;
   display: none;
 }
-nav.main ul.first ul.second ul.third:before {
+nav.main ul.first ul.second ul.third:before, nav.main ul.first ul.sub-menu ul.third:before {
   position: absolute;
   content: '';
   display: block;
@@ -878,7 +892,7 @@ nav.main ul.first ul.second ul.third:before {
   height: 46px;
   background: url("images/menu-drop-shadow2.png") repeat-x;
 }
-nav.main ul.first ul.second ul.third li {
+nav.main ul.first ul.second ul.third li, nav.main ul.first ul.sub-menu ul.third li {
   border-bottom: 1px solid #ce6b58;
   -webkit-transition: background 0.3s ease;
   -moz-transition: background 0.3s ease;
@@ -886,13 +900,13 @@ nav.main ul.first ul.second ul.third li {
   -o-transition: background 0.3s ease;
   transition: background 0.3s ease;
 }
-nav.main ul.first ul.second ul.third li:first-of-type {
+nav.main ul.first ul.second ul.third li:first-of-type, nav.main ul.first ul.sub-menu ul.third li:first-of-type {
   border-top-right-radius: 5px;
 }
-nav.main ul.first ul.second ul.third li:last-child {
+nav.main ul.first ul.second ul.third li:last-child, nav.main ul.first ul.sub-menu ul.third li:last-child  {
   border-bottom: none;
 }
-nav.main ul.first ul.second ul.third li:hover {
+nav.main ul.first ul.second ul.third li:hover, nav.main ul.first ul.sub-menu ul.third li:hover {
   background: #b94d39;
 }
 nav.main .mobile-button {
@@ -951,17 +965,17 @@ nav.main .mobile-menu a {
   text-align: center;
   line-height: 35px;
 }
-nav.main .mobile-menu ul.second {
+nav.main .mobile-menu ul.second, nav.main .mobile-menu ul.sub-menu  {
   display: none;
   border-top: 1px solid #404242;
   background: #323535;
 }
-nav.main .mobile-menu ul.second li {
+nav.main .mobile-menu ul.second li, nav.main .mobile-menu ul.sub-menu li {
   -webkit-box-shadow: inset 10px 0 0 -5px #c85a45;
   -moz-box-shadow: inset 10px 0 0 -5px #c85a45;
   box-shadow: inset 10px 0 0 -5px #c85a45;
 }
-nav.main .mobile-menu ul.second li:last-child {
+nav.main .mobile-menu ul.second li:last-child, nav.main .mobile-menu ul.sub-menu li:last-child {
   border-bottom: none;
 }
 nav.main .mobile-menu ul.third {
