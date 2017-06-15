@@ -194,11 +194,12 @@ nav.main {
     margin-left: -70px;
     bottom: -24px;
 
-    img {
-      max-width: 140px;
-      height: auto;  
-    }
-}
+      img {
+        max-width: 140px;
+        height: auto;  
+      }
+
+  }
 
   .logo {
     display: block;
@@ -215,6 +216,22 @@ nav.main {
 
   .col-6.left {
     padding-right: 130px;
+
+    ul li.menu-item:after {
+      // content: "";
+      // display: block;
+      // position: absolute;
+      // width: 4px;
+      // height: 4px;
+      // top: 13px;
+      // right: -23px;
+      // -webkit-border-radius: 50%;
+      // border-radius: 50%;
+      // background-color: #FFB900;
+      // margin-right: 10px;
+      // margin-left: 10px;
+    }
+
 
     ul.first > li {
       float: right;
@@ -241,8 +258,8 @@ nav.main {
     > li {
       display: inline-block;
       float: left;
-      margin-right: 10px;
-      margin-left: 10px;
+      margin-right: 18px;
+      margin-left: 18px;
       position: relative;
 
       &.show-tablet {
@@ -252,7 +269,7 @@ nav.main {
         color: #f2ac20;
         font-size: 14px;
       }
-      &.current-menu-item:after {
+      &.current-menu-item:before {
         position: absolute;
         content: '';
         display: block;
@@ -377,6 +394,39 @@ nav.main {
       }
     }
   }
+  ul.first_left {
+    > li:not(:first-child):after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 4px;
+        height: 4px;
+        top: 27px;
+        right: -29px;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+        background-color: #FFB900;    
+        margin-right: 10px;
+        margin-left: 10px;  
+    }
+  }
+
+  ul.second_right {
+    > li:not(:last-child):after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 4px;
+        height: 4px;
+        top: 27px;
+        right: -29px;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+        background-color: #FFB900;    
+        margin-right: 10px;
+        margin-left: 10px;  
+    }
+  }  
 
   /* Mobile MENU */
   .mobile-button {
@@ -1852,31 +1902,70 @@ footer {
     font-size: 11px;
     position: relative;
 
-    .dot {
-      margin: 0 12px;
-      background: #000;
-      height: 4px;
-      width: 4px;
-      border-radius: 50%;
-      vertical-align: middle;
-    }
-
-    a {
-      color: #000;
-      -webkit-transition: opacity .3s ease;
-      -moz-transition: opacity .3s ease;
-      -ms-transition: opacity .3s ease;
-      -o-transition: opacity .3s ease;
-      transition: opacity .3s ease;
-
-      &:hover {
-        opacity: .7;
-      }
-    }
-
-    .dot {
+    .footermenu {
+      list-style: none;
       display: inline-block;
+
+      li {
+        position: relative;
+        margin-left: 25px;
+        margin-right: 25px;
+        display: inline-block;
+        color: #000;
+        a {
+          color: #000;
+          -webkit-transition: opacity .3s ease;
+          -moz-transition: opacity .3s ease;
+          -ms-transition: opacity .3s ease;
+          -o-transition: opacity .3s ease;
+          transition: opacity .3s ease;
+          &:hover {
+            opacity: .7;
+          } 
+        }       
+      }
+
+      li:not(:last-child):after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 4px;
+        height: 4px;
+        top: 26px;
+        right: -26px;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+        background-color: #000;               
+      }       
+
+
     }
+
+    // .dot {
+    //   margin: 0 12px;
+    //   background: #000;
+    //   height: 4px;
+    //   width: 4px;
+    //   border-radius: 50%;
+    //   vertical-align: middle;
+    // }
+
+    // a {
+    //   color: #000;
+    //   -webkit-transition: opacity .3s ease;
+    //   -moz-transition: opacity .3s ease;
+    //   -ms-transition: opacity .3s ease;
+    //   -o-transition: opacity .3s ease;
+    //   transition: opacity .3s ease;
+
+    //   &:hover {
+    //     opacity: .7;
+    //   }
+    // }
+
+    // .dot {
+    //   display: inline-block;
+    // }
   }
 }
 

@@ -145,7 +145,9 @@ $ale_h6 = ale_get_option('h6sty');
         footer .content .col-4:nth-child(2) .call h3,
         body.contact .inner .col-6.left .phone
         {
-            <?php  if($ale_font_one){ $font_one = str_replace('+',' ', $ale_font_one); echo "font-family:" . $font_one . ";"; }; ?>
+            <?php  if($ale_font_one){ 
+                $font_one = str_replace('+',' ', $ale_font_one); 
+                echo "font-family: " . "'". $font_one . "';"; }; ?>
         }
     <?php } ?>      
 
@@ -166,7 +168,9 @@ $ale_h6 = ale_get_option('h6sty');
         body.contact .inner .col-6.right h3,
         .about .team h3
         {
-            <?php  if($ale_font_two){ $font_two = str_replace('+',' ', $ale_font_two); echo "font-family:" . $font_two . ";"; }; ?>
+            <?php  if($ale_font_two){ 
+                $font_two = str_replace('+',' ', $ale_font_two); 
+                echo "font-family: " . "'". $font_two . "'"; }; ?>            
         }
     <?php } ?>
 
@@ -223,9 +227,39 @@ $ale_h6 = ale_get_option('h6sty');
         {
             <?php  if($ale_font_three){ 
                 $font_three = str_replace('+',' ', $ale_font_three); 
-                echo "font-family: " . "'". $font_three . "', serif;"; }; ?>
+                echo "font-family: " . "'". $font_three . "';"; }; ?>
         }
-    <?php } ?>          
+    <?php } ?>
+
+    <?php if($ale_font_four) {?>
+        .font_rufina,
+        body.all section.content .breadcrumb a,
+        body.home .mobile .col-6:first-of-type p,
+        body.home .mobile .col-6:last-of-type p,
+        body.home section.how-it-works p,
+        body.home section.suggestions .left form label,
+        body.home section.suggestions .right p,
+        body.home section.our-cars p,
+        body.home section.our-cars .gallery #slider li h4,
+        body.contact .inner .col-6.right .form form label
+        {
+            <?php  if($ale_font_four){ 
+                $font_four = str_replace('+',' ', $ale_font_four); 
+                echo "font-family: " . "'". $font_four . "';"; }; ?>
+        }
+    <?php } ?>
+
+    <?php if($ale_font_five) {?>
+        .font_dancing_script,
+        .font-Dancing,
+        body.home section.newsspecials .specials .content .container:last-of-type .offer
+
+        {
+            <?php  if($ale_font_five){ 
+                $font_five = str_replace('+',' ', $ale_font_five); 
+                echo "font-family: " . "'". $font_five . "';"; }; ?>
+        }
+    <?php } ?>                        
 
     
 

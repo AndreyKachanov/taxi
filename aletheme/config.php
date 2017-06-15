@@ -92,12 +92,6 @@ function aletheme_get_options() {
 						"std" => "1",
 						"type" => "checkbox");
 
-    $options[] = array( "name" => "Copyrights",
-                        "desc" => "Your copyright message.",
-                        "id" => "ale_copyrights",
-                        "std" => "",
-                        "type" => "editor");
-
     $options[] = array( "name" => "Home Page Slider slug",
                         "desc" => "Insert the slider slug. Get the slug on Sliders Section",
                         "id" => "ale_homeslugfull",
@@ -152,6 +146,46 @@ function aletheme_get_options() {
         "std" => "",
         "type" => "text");
 
+    // Добавление вкладки Footer Options для полей Theme Options в админке
+    $options[] = array("name" => "Footer Options",
+                        "type" => "heading");
+
+    $options[] = array( "name" => "Footer Description",
+                        "desc" => "Insert the description",
+                        "id" => "ale_footer_description",
+                        "std" => "",
+                        "type" => "editor");
+
+    $options[] = array( "name" => "Copyrights",
+                        "desc" => "Your copyright message.",
+                        "id" => "ale_copyrights",
+                        "std" => "",
+                        "type" => "editor");
+
+    $options[] = array( "name" => "Footer Call Number",
+                        "desc" => "Insert the call number",
+                        "id" => "ale_footer_callnumber",
+                        "std" => "",
+                        "type" => "text");
+                        
+    $options[] = array( "name" => "Footer Call Text",
+                        "desc" => "Insert the call text that appear in the footer after the call number",
+                        "id" => "ale_footer_callus",
+                        "std" => "",
+                        "type" => "text");
+
+    $options[] = array( "name" => "Footer Address laber",
+                        "desc" => "Insert the Address Label",
+                        "id" => "ale_footer_address_label",
+                        "std" => "",
+                        "type" => "text");
+
+    $options[] = array( "name" => "Footer Address",
+                        "desc" => "Insert the Address",
+                        "id" => "ale_footer_address",
+                        "std" => "",
+                        "type" => "text");                                                                                                                                                       
+
     // Добавление 5 шрифтов во вкладки админки Внешний вид - Theme Options. Шрифты из верстки
     $options[] = array( "name" => "Typography",
                         "type" => "heading");
@@ -187,7 +221,7 @@ function aletheme_get_options() {
     $options[] = array( "name" => "Select the Font Three from Google Library",
                         "desc" => "The default Font is - Playfair+Display",
                         "id" => "ale_font_three",
-                        "std" => "Playfair+Display",
+                        "std" => "",
                         "type" => "select",
                         "options" => $headerfont);
 
@@ -283,29 +317,10 @@ function aletheme_get_options() {
 						"id" => "ale_fb",
 						"std" => "",
 						"type" => "text");
-    $options[] = array( "name" => "Google+",
-                        "desc" => "Your google+ profile URL.",
-                        "id" => "ale_gog",
-                        "std" => "",
-                        "type" => "text");
-    $options[] = array( "name" => "Pinterest",
-                        "desc" => "Your pinteres profile URL.",
-                        "id" => "ale_pint",
-                        "std" => "",
-                        "type" => "text");
-    $options[] = array( "name" => "Flickr",
-                        "desc" => "Your flickr profile URL.",
-                        "id" => "ale_flickr",
-                        "std" => "",
-                        "type" => "text");
-    $options[] = array( "name" => "Linkedin",
-                        "desc" => "Your linked profile URL.",
-                        "id" => "ale_linked",
-                        "std" => "",
-                        "type" => "text");
-    $options[] = array( "name" => "Instagram",
-                        "desc" => "Your instagram profile URL.",
-                        "id" => "ale_insta",
+    
+    $options[] = array( "name" => "Youtube",
+                        "desc" => "Your youtube profile URL.",
+                        "id" => "ale_you",
                         "std" => "",
                         "type" => "text");
     $options[] = array( "name" => "Email",
@@ -313,6 +328,7 @@ function aletheme_get_options() {
                         "id" => "ale_emailcont",
                         "std" => "",
                         "type" => "text");
+
     $options[] = array( "name" => "Show RSS",
                         "desc" => "Check if you want to show the RSS icon on your site",
                         "id" => "ale_rssicon",

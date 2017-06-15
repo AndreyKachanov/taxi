@@ -780,8 +780,8 @@ nav.main ul.first {
 nav.main ul.first > li {
   display: inline-block;
   float: left;
-  margin-right: 10px;
-  margin-left: 10px;
+  margin-right: 18px;
+  margin-left: 18px;
   position: relative;
   /* Show 2nd level */
 }
@@ -792,7 +792,7 @@ nav.main ul.first > li.dot {
   color: #f2ac20;
   font-size: 14px;
 }
-nav.main ul.first > li.current-menu-item:after {
+nav.main ul.first > li.current-menu-item:before {
   position: absolute;
   content: '';
   display: block;
@@ -904,6 +904,34 @@ nav.main ul.first ul.sub-menu ul.third li:last-child {
 }
 nav.main ul.first ul.sub-menu ul.third li:hover {
   background: #b94d39;
+}
+nav.main ul.first_left > li:not(:first-child):after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  top: 27px;
+  right: -29px;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background-color: #FFB900;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+nav.main ul.second_right > li:not(:last-child):after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  top: 27px;
+  right: -29px;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background-color: #FFB900;
+  margin-right: 10px;
+  margin-left: 10px;
 }
 nav.main .mobile-button {
   display: none;
@@ -2261,15 +2289,18 @@ footer .bottom-line {
   font-size: 11px;
   position: relative;
 }
-footer .bottom-line .dot {
-  margin: 0 12px;
-  background: #000;
-  height: 4px;
-  width: 4px;
-  border-radius: 50%;
-  vertical-align: middle;
+footer .bottom-line .footermenu {
+  list-style: none;
+  display: inline-block;
 }
-footer .bottom-line a {
+footer .bottom-line .footermenu li {
+  position: relative;
+  margin-left: 25px;
+  margin-right: 25px;
+  display: inline-block;
+  color: #000;
+}
+footer .bottom-line .footermenu li a {
   color: #000;
   -webkit-transition: opacity .3s ease;
   -moz-transition: opacity .3s ease;
@@ -2277,11 +2308,20 @@ footer .bottom-line a {
   -o-transition: opacity .3s ease;
   transition: opacity .3s ease;
 }
-footer .bottom-line a:hover {
+footer .bottom-line .footermenu li a:hover {
   opacity: .7;
 }
-footer .bottom-line .dot {
-  display: inline-block;
+footer .bottom-line .footermenu li:not(:last-child):after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  top: 26px;
+  right: -26px;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background-color: #000;
 }
 /* Services
 /* ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## */
