@@ -149,27 +149,14 @@
     <!-- Pagination -->
     <div class="pagination">
         <div class="wrap">
-            <div class="col-1">
-                <a href="#" class="left"></a>
+            <div class="col-1 left_link_pag">
+                <?php echo get_previous_posts_link(); ?>
             </div>
             <div class="col-10">
-                <a href="#">1</a>
-                <a href="#" class="active">2</a>
-                <a href="#">3</a>
-                <a href="#">4</a>
-                <a href="#">5</a>
-                <a href="#">6</a>
-                <a href="#">7</a>
-                <a href="#">8</a>
-                <a href="#">9</a>
-                <a href="#">10</a>
-                <a href="#">11</a>
-                <a href="#">12</a>
-                <a href="#" class="dots">...</a>
-                <a href="#">55</a>
+                <?php ale_page_links(); ?>
             </div>
-            <div class="col-1">
-                <a href="#" class="right"></a>
+            <div class="col-1 right_link_pag">
+                <?php echo get_next_posts_link(); ?>
             </div>
         </div>
     </div> 

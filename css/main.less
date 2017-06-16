@@ -2953,6 +2953,19 @@ body.blog {
     .col-10 {
       text-align: center;
 
+      .current {
+        box-shadow: inset 0 -3px 0 0 #fcb722;
+        color: #fff;
+        display: inline-block;
+        height: 85px;
+        line-height: 85px;
+        font-size: 19px;
+        .font-Playfair();
+        // color: rgb(252, 183, 34);
+        padding: 0 15px;
+        margin: 0 3px;                
+      }
+
       a {
         display: inline-block;
         height: 85px;
@@ -2963,37 +2976,40 @@ body.blog {
         padding: 0 15px;
         margin: 0 3px;
 
-        &.active {
-          box-shadow: inset 0 -3px 0 0 #fcb722;
-          color: #fff;
-        }
       }
     }
-    .left {
+    .right_link_pag {
+      a {
+        display: block;
+        line-height: 85px;
+        background: url("images/pagination-right.png") no-repeat center;
+        width: 28px;
+        height: 85px;
+        float: right;
+        .transition(background .3s ease);
+        font-size: 0;
+        &:hover {
+          background: url("images/pagination-right-hover.png") no-repeat center;
+        }        
+      }
+    }
+
+    .left_link_pag {
+      a {
       display: block;
       line-height: 85px;
       background: url("images/pagination-left.png") no-repeat center;
       width: 28px;
       height: 85px;
+      font-size: 0;
       .transition(background .3s ease);
 
       &:hover {
         background: url("images/pagination-left-hover.png") no-repeat center;
-      }
+      }      
+      }      
     }
-    .right {
-      display: block;
-      line-height: 85px;
-      background: url("images/pagination-right.png") no-repeat center;
-      width: 28px;
-      height: 85px;
-      float: right;
-      .transition(background .3s ease);
 
-      &:hover {
-        background: url("images/pagination-right-hover.png") no-repeat center;
-      }
-    }
   }
 
 }

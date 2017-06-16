@@ -431,33 +431,56 @@ function aletheme_metaboxes($meta_boxes) {
         'context'    => 'normal',
         'priority'   => 'high',
         'show_names' => true, // Show field names on the left
-        'show_on'    => array( 'key' => 'page-template', 'value' => array('page-home.php'), ), // Specific post templates to display this metabox
+        'show_on'    => array( 'key' => 'page-template', 'value' => array('template-contact.php'), ), // Specific post templates to display this metabox
 
         'fields' => array(
             array(
-                'name' => 'First Description',
+                'name' => 'First Title text',
                 'desc' => 'Insert the text',
-                'id'   => $prefix . 'descr1',
-                'type' => 'textarea',
-            ),
-            array(
-                'name' => 'Second Description',
-                'desc' => 'Insert the text',
-                'id'   => $prefix . 'descr2',
+                'id'   => $prefix . 'title_one',
+                'std' => 'Taxi',
                 'type' => 'text',
             ),
             array(
-                'name' => 'File Upload',
+                'name' => 'Second Title text',
                 'desc' => 'Insert the text',
-                'id'   => $prefix . 'fileupload',
-                'type' => 'file',
+                'id'   => $prefix . 'title_two',
+                'std' => 'Press',                
+                'type' => 'text',
             ),
             array(
-                'name' => 'Text Date',
+                'name' => 'Title Address',
                 'desc' => 'Insert the text',
-                'id'   => $prefix . 'datefield',
-                'type' => 'wysiwyg',
+                'id'   => $prefix . 'title_address',
+                'std'  => 'Our adress',              
+                'type' => 'text',
             ),
+            array(
+                'name' => 'Phone Title text',
+                'desc' => 'Insert the text',
+                'id'   => $prefix . 'title_phone',
+                'std'  => 'Phone for clients',               
+                'type' => 'text',
+            ),
+            array(
+                'name' => 'Address',
+                'desc' => 'Insert the text',
+                'id'   => $prefix . 'site_address',               
+                'type' => 'text',
+            ),
+            array(
+                'name' => 'The Phone',
+                'desc' => 'Insert the text',
+                'id'   => $prefix . 'site_phone',               
+                'type' => 'text',
+            ),
+            array(
+                'name' => 'Title Form',
+                'desc' => 'Insert the text',
+                'id'   => $prefix . 'title_form',
+                'std'  => 'Contact with us',               
+                'type' => 'text',
+            )
         )
     );
 
