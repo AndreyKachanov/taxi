@@ -3129,6 +3129,9 @@ body.blog article .right .inner .shadow-bottom {
   left: 10px;
   bottom: -7px;
 }
+body.blog article .right .inner .text {
+  margin-bottom: 40px;
+}
 body.blog article .right .inner .text a {
   display: block;
   font-size: 27px;
@@ -3173,6 +3176,20 @@ body.blog article .right .inner .category {
   font-family: "Arial";
   color: #acacac;
   margin-top: 25px;
+}
+body.blog article .right .inner .category a {
+  color: inherit;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -ms-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+body.blog article .right .inner .category a:hover {
+  -moz-opacity: 0.6;
+  -khtml-opacity: 0.6;
+  -webkit-opacity: 0.6;
+  opacity: 0.6;
 }
 body.blog article .right .inner .img {
   position: absolute;

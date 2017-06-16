@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
-<h1>It's Index Page</h1>
-<br><br>
+
+<?php /*?>
     <!-- Content -->
     <div class="blog-center-align">
 
@@ -121,4 +121,56 @@
         </div>
 
     </div>
+
+<?php */?>
+    <!-- Content -->
+    <div class="wrap">
+        <section class="content">
+
+            <h2><?php _e('Our Blog', 'aletheme'); ?></h2>
+            <?php get_breadcrumbs();?>
+<!--             <div class="breadcrumb">
+                <a href="index.html">Homepage</a>
+                <div class="line"></div>
+                <a href="blog.html">Blog</a>
+            </div> -->
+            <!-- -->
+
+            <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+                <?php ale_part('postpreview' );?>
+            <?php endwhile; else: ?>
+                <?php ale_part('notfound')?>
+            <?php endif; ?>
+
+
+        </section>
+    </div>
+
+    <!-- Pagination -->
+    <div class="pagination">
+        <div class="wrap">
+            <div class="col-1">
+                <a href="#" class="left"></a>
+            </div>
+            <div class="col-10">
+                <a href="#">1</a>
+                <a href="#" class="active">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <a href="#">5</a>
+                <a href="#">6</a>
+                <a href="#">7</a>
+                <a href="#">8</a>
+                <a href="#">9</a>
+                <a href="#">10</a>
+                <a href="#">11</a>
+                <a href="#">12</a>
+                <a href="#" class="dots">...</a>
+                <a href="#">55</a>
+            </div>
+            <div class="col-1">
+                <a href="#" class="right"></a>
+            </div>
+        </div>
+    </div> 
 <?php get_footer(); ?>

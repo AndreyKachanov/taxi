@@ -2848,6 +2848,10 @@ body.blog {
           bottom: -7px;
         }
 
+        .text {
+          margin-bottom: 40px;
+        }
+
         .text a {
           display: block;
           font-size: 27px;
@@ -2889,6 +2893,14 @@ body.blog {
           font-family: "Arial";
           color: rgb(172, 172, 172);
           margin-top: 25px;
+
+          a {
+            color: inherit;
+            .transition(all 300ms ease-in-out);
+            &:hover {
+              .opacity(0.6);
+            }
+          }
         }
 
         .img {
