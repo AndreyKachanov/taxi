@@ -2773,6 +2773,20 @@ body.blog .pagination .right_link_pag a {
 body.blog .pagination .right_link_pag a:hover {
   background: url("images/pagination-right-hover.png") no-repeat center;
 }
+body.blog .pagination .right_link_pag span.notactive {
+  cursor: default;
+  display: block;
+  line-height: 85px;
+  background: url("images/pagination-right-hover.png") no-repeat center;
+  width: 28px;
+  height: 85px;
+  font-size: 0;
+  -webkit-transition: background 0.3s ease;
+  -moz-transition: background 0.3s ease;
+  -ms-transition: background 0.3s ease;
+  -o-transition: background 0.3s ease;
+  transition: background 0.3s ease;
+}
 body.blog .pagination .left_link_pag a {
   display: block;
   line-height: 85px;
@@ -2788,6 +2802,20 @@ body.blog .pagination .left_link_pag a {
 }
 body.blog .pagination .left_link_pag a:hover {
   background: url("images/pagination-left-hover.png") no-repeat center;
+}
+body.blog .pagination .left_link_pag span.notactive {
+  cursor: default;
+  display: block;
+  line-height: 85px;
+  background: url("images/pagination-left-hover.png") no-repeat center;
+  width: 28px;
+  height: 85px;
+  font-size: 0;
+  -webkit-transition: background 0.3s ease;
+  -moz-transition: background 0.3s ease;
+  -ms-transition: background 0.3s ease;
+  -o-transition: background 0.3s ease;
+  transition: background 0.3s ease;
 }
 /* Blog
 /* ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## */

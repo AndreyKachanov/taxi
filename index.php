@@ -150,13 +150,25 @@
     <div class="pagination">
         <div class="wrap">
             <div class="col-1 left_link_pag">
-                <?php echo get_previous_posts_link(); ?>
+                <?php  
+                   if (get_previous_posts_link()) {
+                        echo get_previous_posts_link();
+                   } else {
+                    echo "<span class='notactive'></span>";
+                   }
+                ?>
             </div>
             <div class="col-10">
                 <?php ale_page_links(); ?>
             </div>
             <div class="col-1 right_link_pag">
-                <?php echo get_next_posts_link(); ?>
+                <?php  
+                   if (get_next_posts_link()) {
+                        echo get_next_posts_link();
+                   } else {
+                    echo "<span class='notactive'></span>";
+                   }
+                ?>
             </div>
         </div>
     </div> 

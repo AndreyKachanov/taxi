@@ -2992,23 +2992,49 @@ body.blog {
           background: url("images/pagination-right-hover.png") no-repeat center;
         }        
       }
+
+      span.notactive {
+          cursor:default;
+          display: block;
+          line-height: 85px;
+          background: url("images/pagination-right-hover.png") no-repeat center;
+          width: 28px;
+          height: 85px;
+          font-size: 0;
+          .transition(background .3s ease);                
+      }        
     }
 
     .left_link_pag {
       a {
-      display: block;
-      line-height: 85px;
-      background: url("images/pagination-left.png") no-repeat center;
-      width: 28px;
-      height: 85px;
-      font-size: 0;
-      .transition(background .3s ease);
+        display: block;
+        line-height: 85px;
+        background: url("images/pagination-left.png") no-repeat center;
+        width: 28px;
+        height: 85px;
+        font-size: 0;
+        .transition(background .3s ease);
 
-      &:hover {
-        background: url("images/pagination-left-hover.png") no-repeat center;
-      }      
-      }      
+        &:hover {
+          background: url("images/pagination-left-hover.png") no-repeat center;
+        }
+               
+      }
+
+      span.notactive {
+          cursor:default;
+          display: block;
+          line-height: 85px;
+          background: url("images/pagination-left-hover.png") no-repeat center;
+          width: 28px;
+          height: 85px;
+          font-size: 0;
+          .transition(background .3s ease);                
+        }       
+
+          
     }
+
 
   }
 
