@@ -623,11 +623,13 @@ body.all section.content > h2:before {
 body.all section.content > h2:after {
   right: 50px;
 }
-body.all section.content .breadcrumb {
+body.all section.content .breadcrumb,
+body.all section.content .breadcrumbs {
   text-align: center;
   padding: 25px 0;
 }
-body.all section.content .breadcrumb a {
+body.all section.content .breadcrumb a,
+body.all section.content .breadcrumbs a {
   display: inline-block;
   font-size: 12px;
   font-family: 'Rufina', serif;
@@ -636,10 +638,12 @@ body.all section.content .breadcrumb a {
   text-decoration: none;
   line-height: 1.2;
 }
-body.all section.content .breadcrumb a:first-of-type {
+body.all section.content .breadcrumb a:first-of-type,
+body.all section.content .breadcrumbs a:first-of-type {
   text-decoration: underline;
 }
-body.all section.content .breadcrumb .line {
+body.all section.content .breadcrumb .line,
+body.all section.content .breadcrumbs .line {
   display: inline-block;
   background: url("images/breadcrumb.png") no-repeat center;
   height: 15px;
@@ -648,7 +652,8 @@ body.all section.content .breadcrumb .line {
   margin: 0 8px;
   border-bottom: 0;
 }
-body.all section.content .breadcrumb .line.back {
+body.all section.content .breadcrumb .line.back,
+body.all section.content .breadcrumbs .line.back {
   webkit-transform: rotate(180deg);
   /* Safari and Chrome */
   -moz-transform: rotate(180deg);
@@ -2546,7 +2551,8 @@ body.blog {
 body.blog section.content {
   padding: 38px 20px 50px 20px;
 }
-body.blog .breadcrumb {
+body.blog .breadcrumb,
+body.blog .breadcrumbs {
   margin-bottom: 10px;
 }
 body.blog article .left {
