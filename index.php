@@ -5,13 +5,10 @@
         <section class="content">
 
             <h2><?php _e('Our Blog', 'aletheme'); ?></h2>
-                        <?php get_breadcrumbs(); ?>
-<!--             <div class="breadcrumb">
-                <a href="index.html">Homepage</a>
-                <div class="line"></div>
-                <a href="blog.html">Blog</a>
-            </div> -->
-            <!-- -->
+          
+                <?php 
+                // get_breadcrumbs(); 
+                ?>
 
             <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
                 <?php ale_part('postpreview' );?>

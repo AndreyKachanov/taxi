@@ -26,10 +26,12 @@
 >
 
 <!-- Orange & Black -->
-<div class="background">
+  
+<div class="background">                      
     <div class="col-6"></div>
     <div class="col-6"></div>
 </div>
+
 
 <div id="call-us" class="call-us">
     <div class="selected">
@@ -91,7 +93,6 @@
     <?php get_search_form();?>
 
 </nav>
-
 <?php if(is_page_template('page-home.php')) { ?>
 <!-- Header only for HomePage -->
 <header class="wrap cf">
@@ -106,7 +107,7 @@
                 psum available, but the majority
             </p>
 
-            <img class="car" src="css/images/car.png" alt=""/>
+            <img class="car" src="<?php bloginfo( 'template_directory' );?>/css/images/car.png" alt=""/>
         </div>
 
     </div>
@@ -166,6 +167,6 @@
 
         </div>
 
-    </div>
+    </div>   
 </header>
 <?php } ?>

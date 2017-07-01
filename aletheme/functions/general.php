@@ -1284,14 +1284,14 @@ function get_breadcrumbs() {
     $parent_id    = $parent_id_2 = $post->post_parent;
     $frontpage_id = get_option('page_on_front');
 
-    if (is_home() || is_front_page()) {
+    if (is_home() || is_front_page() ) {
 
         if ($show_on_home == 1) echo '<div class="breadcrumbs"><a href="' . $home_link . '">' . $text['home'] . '</a></div>';
 
     }
     else {
 
-        echo '<div class="breadcrumbs" xmlns:v="http://rdf.data-vocabulary.org/#">';
+        echo '<div class="breadcrumbs test" xmlns:v="http://rdf.data-vocabulary.org/#">';
         if ($show_home_link == 1) {
             echo sprintf($link, $home_link, $text['home']);
             if ($frontpage_id == 0 || $parent_id != $frontpage_id) echo $delimiter;

@@ -599,6 +599,10 @@ html[xmlns] .slides {
   position: absolute;
   top: 0;
 }
+.background .ads_box {
+  position: absolute;
+  border: 1px solid red;
+}
 .background .col-6:first-of-type {
   background: #fcbc23 url('images/pattern2.png') repeat;
   height: inherit;
